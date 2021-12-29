@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #3b3a30;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #000 3px solid;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #eaece5;
+    font-weight: bold;
+}
+
+#showcase {
+    background-color: #c0ded9;
+    text-align: left;
+    color: #3b3a30;
+}
+
+#showcase p {
+    font-size: 22px;
+}
+
+#showcase .box {
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    #showcase .box {
+      width: 100%;
+    }
+  }
+
+#logos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#logos .logo {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    font-size: 22px;
+}
+
+#logos .logo img {
+    width: 90px;
+}
+
+#logos::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    #logos .logo {
+      width: 100%;
+    }
+  }
+
+footer {
+    padding-top: 30px;
+    text-align: center;
+    background: #3b3a30;
+    color: #fff;
+    min-height: 118px;
+}
+
+
