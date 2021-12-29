@@ -21,13 +21,12 @@ header {
     border-bottom: #000 3px solid;
 }
 
-
-ul {
-    margin: 0;
+header nav ul {
     padding: 0;
+    margin: 0;
 }
 
-header li {
+header nav ul li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
@@ -46,14 +45,36 @@ header nav {
     margin-top: 10px;
 }
 
+header nav ul li ul li {
+    float: none;
+}
+
+header nav ul ul {
+    position: absolute;
+    left: -999em;
+    background-color: beige;
+}
+
+header nav ul li:hover ul {
+    left: auto;
+}
+
 header a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    display: block;
 }
 
-header a:hover {
-    color: #eaece5;
+header nav ul a:hover {
+    background-color: beige;
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul li ul li a:hover {
+    background-color: beige;
+    color: black;
     font-weight: bold;
 }
 
